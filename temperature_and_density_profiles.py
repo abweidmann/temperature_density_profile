@@ -29,11 +29,11 @@ AVOGADRO = 6.02214129 * 1e23  # Avogadro's number
 
 
 @click.command()
-@click.option('--gro', default='input/in.gro', type=str, help='input trajectory file in gro format')
+@click.option('--gro', default='in.gro', type=str, help='input trajectory file in gro format')
 @click.option('--density_slabs', default=6, type=int, help='input number of slabs')
 @click.option('--temperature_slabs', default=6, type=int, help='input number of slabs')
 @click.option('--step', default=100_000, type=int, help='input step in ps to calculate profiles')
-@click.option('--atoms', default='input/atoms.csv', type=str, help='inputCSV file with name \
+@click.option('--atoms', default='atoms.csv', type=str, help='inputCSV file with name \
               of atoms present in the system along with molecular weight \
               and number of constraints for unique atom for each molecule, separated by commas')
 def main(gro, density_slabs, temperature_slabs, atoms, step):
