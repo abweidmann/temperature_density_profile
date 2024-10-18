@@ -38,8 +38,8 @@ AVOGADRO = 6.02214129 * 1e23  # Avogadro's number
               and number of constraints for unique atom for each molecule, separated by commas')
 def main(gro, density_slabs, temperature_slabs, atoms, step):
     """
-    This code takes a GROMACS .gro trajectory file and calculates the temperature and density
-    profiles for it at several frames, selected by the step parameter.
+    This code takes a molecular dynamics simulation GROMACS .gro trajectory file and calculates the 
+    temperature and density profiles for it at several frames, selected by the step parameter.
 
     """
 
